@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="enableFrameGeneration"
+            android:title="@string/enable_frame_generation"
+            android:summary="@string/enable_frame_generation_summary" />
+        
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enableSuperResolution"
+            android:title="@string/enable_super_resolution"
+            android:summary="@string/enable_super_resolution_summary"
+            android:dependency="enableFrameGeneration" />
+        
+        <SeekBarPreference
+            android:defaultValue="1"
+            android:key="generatedFramesCount"
+            android:title="@string/frames_to_generate"
+            android:summary="@string/frames_to_generate_summary"
+            android:max="3"
+            android:dependency="enableFrameGeneration" />
+        
+        <Preference
+            android:key="applySettings"
+            android:title="@string/apply"
+            android:summary="@string/apply_summary" />
+        
+        <Preference
+            android:key="resetSettings"
+            android:title="@string/reset"
+            android:summary="@string/reset_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

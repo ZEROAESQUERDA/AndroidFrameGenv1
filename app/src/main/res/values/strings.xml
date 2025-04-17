@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Frame Generation</string>
+    <string name="select_game">Selecionar Jogo</string>
+    <string name="game_package_name">Nome do pacote do jogo (ex: com.tencent.ig)</string>
+    <string name="settings">Configurações</string>
+    <string name="enable_frame_generation">Habilitar Frame Generation</string>
+    <string name="enable_frame_generation_summary">Gera frames intermediários para aumentar a taxa de quadros</string>
+    <string name="enable_super_resolution">Habilitar Super Resolution</string>
+    <string name="enable_super_resolution_summary">Melhora a resolução da imagem (requer mais recursos)</string>
+    <string name="frames_to_generate">Frames a gerar</string>
+    <string name="frames_to_generate_summary">Número de frames intermediários a serem gerados</string>
+    <string name="apply">Aplicar</string>
+    <string name="apply_summary">Aplicar configurações ao jogo selecionado</string>
+    <string name="reset">Resetar</string>
+    <string name="reset_summary">Restaurar configurações padrão</string>
+    
+    <!-- Tabs -->
+    <string name="tab_basic">Básico</string>
+    <string name="tab_advanced">Avançado</string>
+    
+    <!-- Advanced Settings -->
+    <string name="advanced_settings">Configurações Avançadas</string>
+    <string name="threshold_settings">Configurações de Threshold</string>
+    <string name="depth_diff_threshold_sr">Threshold de diferença de profundidade (SR)</string>
+    <string name="color_diff_threshold_fg">Threshold de diferença de cor (FG)</string>
+    <string name="depth_diff_threshold_fg">Threshold de diferença de profundidade (FG)</string>
+    <string name="depth_scale">Escala de profundidade</string>
+    <string name="depth_bias">Bias de profundidade</string>
+    <string name="resolution_settings">Configurações de Resolução</string>
+    <string name="render_width">Largura de renderização</string>
+    <string name="render_height">Altura de renderização</string>
+    <string name="upsample_scale">Escala de upsampling</string>
+</resources>
