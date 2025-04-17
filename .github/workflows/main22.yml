@@ -15,6 +15,9 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
+      - name: Garantir permissões do gradlew
+        run: chmod +x ./gradlew
+
       - name: Instalar Java
         uses: actions/setup-java@v3
         with:
@@ -27,14 +30,11 @@ jobs:
           ndk: true
           cmake: true
 
-      - name: Permitir execução do gradlew
-        run: chmod +x ./gradlew
-
       - name: Build do APK Debug
         run: ./gradlew assembleDebug
 
       - name: Upload do APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # Atualize a versão para v3
         with:
           name: meu-apk-debug
           path: app/build/outputs/apk/debug/app-debug.apk
